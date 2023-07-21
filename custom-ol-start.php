@@ -7,7 +7,12 @@ Version: 1.0
 
 // Enqueue JavaScript and CSS files
 function custom_ol_start_enqueue_scripts() {
-    wp_enqueue_script('custom-ol-start-script', plugins_url('custom-ol-start.js', __FILE__), array('jquery'), '1.0', true);
+    if (is_admin()) {
+        // Note: You'll still need to handle the possibility that TinyMCE might not be loaded.
+        add_action('after_wp_tiny_mce', function() {
+            wp_enqueue_script('custom-ol-start-script', plugins_url('custom-ol-start.js', __FILE__), array('jquery'), '1.0', true);
+        });
+    }
 }
 add_action('admin_enqueue_scripts', 'custom_ol_start_enqueue_scripts');
 
