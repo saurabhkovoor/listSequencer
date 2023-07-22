@@ -3,7 +3,7 @@
         editor.addButton('custom_ol_start_button', {
             title: 'Set start number for ordered list',
             icon: 'sharpen',
-            tooltip: 'Automatically set start for ordered lists',
+            tooltip: 'Automatically set start values for ordered lists',
             onclick: function() {
                 var selectedContent = editor.selection.getContent({ format: 'html' });
                 var wrapper = document.createElement('div');
