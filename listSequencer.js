@@ -1,8 +1,8 @@
 (function () {
-  tinymce.PluginManager.add("custom_ol_start", function (editor, url) {
-    editor.addButton("custom_ol_start_button", {
+  tinymce.PluginManager.add("listSequencer", function (editor, url) {
+    editor.addButton("listSequencer_button", {
       title: "Set start number for ordered list",
-      icon: "sharpen",
+      image: url + "/listSequencer.svg",
       tooltip: "Automatically set start values for ordered lists",
       onclick: function () {
         var selectedContent = editor.selection.getContent({ format: "html" });
