@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: ListSequencer
-Description: Adds a button to the classic editor toolbar for setting the start attribute values of basic ordered lists to the lists in selection, hence treating the selected lists as one sequence.  (Hierarchical ordered lists currently not supported)
+Plugin Name: List Sequencer
+Description: Adds a button to the classic editor toolbar for setting the start attribute values to the lists in selection, hence treating the selected lists as one sequence.  (Hierarchical ordered lists are currently not supported)
 Version: 1.0
 Author: <a href="https://saurabhkovoor.com">Saurabh Kovoor</a>
 */

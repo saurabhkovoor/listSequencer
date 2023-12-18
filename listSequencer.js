@@ -1,9 +1,10 @@
 (function () {
   tinymce.PluginManager.add("listSequencer", function (editor, url) {
     editor.addButton("listSequencer_button", {
-      title: "Set start number for ordered list",
+      title: "List Sequencer",
       image: url + "/listSequencer.svg",
-      tooltip: "Automatically set start values for ordered lists",
+      tooltip:
+        "List Sequencer: Automatically set start values for ordered lists",
       onclick: function () {
         var selectedContent = editor.selection.getContent({ format: "html" });
 
